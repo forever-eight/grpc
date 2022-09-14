@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package grpc;
+
+option go_package = "proto/reverse.proto";
+
+service Reverse{
+  rpc Do(ReverseRequest)returns (ReverseResponse){}
+}
+
+message ReverseRequest{
+  string message = 1;
+}
+
+message ReverseResponse{
+  string message = 1;
+}
