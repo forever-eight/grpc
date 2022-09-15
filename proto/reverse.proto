@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package grpc;
 
-option go_package = "proto/reverse.proto";
+option go_package = "github.com/forever-eight/grpc.git/proto;pb";
 
 service Reverse{
   rpc Do(ReverseRequest)returns (ReverseResponse){}
